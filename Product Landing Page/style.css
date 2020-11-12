@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Gochi+Hand&family=Kalam:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+}
+html {font-size: 20px;}
+
+/*Positioning and Display Properties */
+nav {position: fixed; top: 0%;}
+
+header,
+.about,
+.review,
+.container {position: relative;}
+
+section,
+.wrap,
+.content,
+.btn3 {position: absolute;}
+
+section,
+.wrap,
+.btn3 {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+section,
+nav,
+ul,
+.row,
+.btn-wrapper,
+.about,
+.menu-container,
+.food,
+.order,
+footer {display: flex;}
+
+/*Flex Properties*/
+
+section,
+.food {flex-direction: column;}
+
+section {justify-content: space-evenly;}
+
+nav,
+.about {justify-content: space-between;}
+
+.food,
+.order,
+footer {justify-content: space-around}
+
+.btn-wrapper {justify-content: center;}
+
+.row {  flex-wrap: wrap;}
+.column {flex: 25%;}
+
+.about,
+.food,
+.order,
+h2 {align-items: center;}
+
+nav {align-items: center;}
+/*Font related stuff*/
+p {font-family: 'Roboto', sans-serif; line-height: 1.3rem; font-size: 0.9rem;}
+
+h2 {
+  font-family: 'Kalam', cursive; 
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: 'Kalam', cursive;
+}
+header  h2 {
+  font-size: 2rem; 
+  /* font-family: 'Gochi Hand', cursive; */
+  font-weight: normal;
+  word-spacing: 0.5rem;
+  color: rgba(230, 230, 230, 1);
+  margin-bottom: 5rem;
+}
+
+header,
+.gallery,
+.aaa h2,
+.review,
+.menu-box,
+.btn3,
+.order,
+footer {text-align: center;}
+
+.about p {text-indent: 2rem; margin-bottom: 1rem;}
+.about p:last-of-type {text-align: center; text-indent: 0; font-size: 1.2rem;}
+
+header,
+.review,
+.btn3,
+footer,
+a,
+.gallery h2{color: white;}
+
+.about h2,
+.menu h2,
+.order h2,
+.menu .font {color: goldenrod;}
+
+.about p,
+.menu p, 
+.order {color: #7d7d7d;}
+nav .logo {display: flex; align-items: center;}
+
+/*size of items*/
+
+header,
+.about,
+.menu,
+.gallery,
+.order {
+  height: fit-content;
+  min-height: 90vh;
+  max-width: 100vw;
+}
+.review {min-height: 100vh;}
+
+.btn-wrapper div {
+  width: 10rem;
+}
+
+header,
+section,
+nav, 
+.about-image img,
+.container img,
+.content,
+.menu a,
+.empty img,
+.column img {width: 100%;}
+
+.content {height: 0;}
+
+.about-image {max-width: 500px;}
+
+.wrap,
+.menu-container {width: fit-content;}
+
+.container {
+  max-width: 10rem;
+}
+
+.decor {width: 3rem;}
+.empty {
+  max-width: 20rem;
+  min-width: 10rem;
+}
+.aaa {max-width: 40rem; margin: 0 auto;}
+
+.column {max-width: 25%;}
+
+/*Margin and Padding Properties*/
+
+.btn-wrapper div {padding: 0.5rem; margin: 1rem;}
+
+/*Margin Properties*/
+
+li {margin: 0 0.4rem;}
+section div {margin: 0.5rem;}
+.about-image {margin: 0 3rem 0 3rem;}
+
+.menu-container {margin: 1rem auto;}
+
+.food {margin: 3rem 0rem;}
+.about-info {margin-top: 2rem;}
+.seperator {margin: 0.5rem 0 2rem 0;}
+
+.column img {margin-top: 0.75rem;}
+
+strong {margin-right: 0.2rem;}
+
+/*Padding Properties*/
+
+.review,
+.menu,
+.order,
+.about {padding: 2rem;}
+
+.gallery {padding: 2rem 4rem;}
+nav,
+.column,
+.menu a {padding: 0.325rem;}
+
+footer {padding: 2rem;}
+
+/*Border Properties*/
+
+.gallery img {
+  border-radius: 0.3rem;
+}
+
+
+/*Background*/
+
+header,
+.gallery,
+.review {
+  background: url('https://www.falafelinc.org/assets/hero_image.4f6442f.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav,
+.menu a {background-color: rgba(0, 0, 0, 0.5);}
+
+.about,
+.menu,
+.order {
+  background: url('https://getbase.org/templates/restaurant-template/contemporary-china.c167a0e1.png');
+}
+
+footer {
+  background-color: rgba(25, 25, 25, 1);
+}
+
+.btn {
+  background: ;
+}
+
+/*Misc*/
+nav {transition: 1s ease;}
+
+.column img {vertical-align: middle;}
+.decor1 {transform: rotate(180deg);}
+
+a {
+  text-decoration: none; 
+}
+li {transition: ease 0.5s;}
+li:hover {transform: scale(1.1)}
+nav {z-index: 999;}
+
+.content {
+  overflow: hidden;
+  transition: .5s ease;
+}
+.shadow {transition: ease 0.5s;}
+
+.content a {padding: 1rem;}
+.container:hover .content{
+  height: 100%;
+}
+.container:hover img {box-shadow: 0 0 10px black}
+.shadow:hover {transform: scale(1.1); cursor: pointer; box-shadow: 0 0 10px black; z-index: 50;}
+
+.btn {
+  border: 1px solid white; 
+  border-radius: 0.4rem;
+  transition: ease-in-out 0.5s;
+}
+.btn:hover {border: 1px solid rgba(0, 0, 0, 0.5);background-color: rgba(0, 0, 0, 0.5); cursor: pointer; border: none;}
+
+nav:hover {background-color: white; color: black;}
+/*Navbar*/
+nav:hover a {color: black}
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width:100%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+  margin: 1rem auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  padding: 0.5rem;
+  width: 10rem;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 0.4rem;
+}
+button:hover {cursor: pointer;}
+
+@media screen and (max-width: 1000px) {
+  html {font-size: 15px;}
+  footer {flex-direction: column;}
+  .about {flex-direction: column; padding: 3rem 5rem; height: 200px;}
+  .column {max-width: 50%; flex: 50%;}
+  .hidden {display: none;}
+  .order {flex-direction: column;}
+  .empty {display: none;}
+  * {text-align: center;}
+}
+@media screen and (max-width: 500px) {
+  .menu-container {flex-wrap: wrap;}
+  html {font-size: 10px;}
+  .about-image {display: none;}
+  header,
+  .gallery,
+  .review {
+  background: url('https://images.pexels.com/photos/2302809/pexels-photo-2302809.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;}
+  footer div {margin: 3rem;}
+  header {height: 100vh;}
+  .about {text-indent: none; min-height: 70vh;}
+  .review {min-height:70vh}
+  .container {margin-bottom: 1rem;}
+  .food {margin: 1rem 0;}
+  .gallery {min-height: fit-content;}
+  .column {max-width: 100%; flex: 100%;}
+}
