@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/e3da2109b9.js" crossorigin="anonymous"></script>
-</head>
-
-
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e3da2109b9.js" crossorigin="anonymous"></script>
+  </head>
   
-  <header>
-    <nav>
-      <div class="logo"><img src="./abstract-deer-head-logo-260nw-582208303-removebg-preview.png" alt="">Buckhead</div>
-        <ul type="none">
-          <li><a href="#about">About</a></li>
-          <li><a href="#review">Review</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#order">Reservation</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      
-    </nav>
+  
+  <body>
+    
+    <header>
+      <nav>
+        <div class="logo"><img src="./abstract-deer-head-logo-260nw-582208303-removebg-preview.png" alt=""><span>Buckhead</span></div>
+        <div class="nava">
+          <ul type="none" class="fuck">
+            <li><a href="#about">About</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#order">Reservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-wrap">
+          <input type="checkbox" class="toggler" id="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="navigation">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#review">Review</a></li>
+                  <li><a href="#menu">Menu</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#order">Reservation</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     <section class="centering-element">
       <div class="wrapper">
         <h1>Welcome to Buckhead</h1>
         <h2>Our Dishes are beyond the boundaries of taste</h2>
       </div>
-      <div class="seperator">
-        <img src="https://getbase.org/templates/restaurant-template/divider-xl-white.473e514f.svg" alt="">
-      </div>
+      
+        <img src="https://getbase.org/templates/restaurant-template/divider-xl-white.473e514f.svg" alt="" class="seperate">
         <div class="btn-wrapper">
           <div class="btn btn1">BOOK A TABLE</div>
           <div class="btn btn2">SEE THE MENU</div>
@@ -56,7 +75,7 @@
     
     <div class="review" id="review">
       <div class="wrap">
-        <h2><img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor1"> Check what our customers say about us <img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor2"></h2>
+        <h2><img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor1 hide"> Check what our customers say about us <img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor2 hide"></h2>
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/FN3cPu_SdAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -65,15 +84,17 @@
     
     <div class="menu" id="menu">
       <div class="menu-box">
-        <h2 class="font"><img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor1"> Explore Delicious Flavour <img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor2"></h2>
-        <p>We created ***** with the desire to bring high quality, fresh and handmade fare to our community. We strive to make a difference in the way people experience food by creating inspired dishes using the best seasonal, and locally sourced ingredients. All of our menu items are designed and prepared with passion and skill, while reflecting our belief that food is love.</p>
+        <div class="menu-wrapper">
+          <h2 class="font"><img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor1"> Explore Delicious Flavour <img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor2"></h2>
+          <p>We created ***** with the desire to bring high quality, fresh and handmade fare to our community. We strive to make a difference in the way people experience food by creating inspired dishes using the best seasonal, and locally sourced ingredients. All of our menu items are designed and prepared with passion and skill, while reflecting our belief that food is love.</p>
+        </div>
         <div class="menu-container row">
           <div class="food column">
             <p class="font">Snacks</p>
             <img src="https://getbase.org/templates/restaurant-template/divider-gold.a0e00e80.svg" alt="" class="seperator">
             <div class="container">
               <div class="image-wrapper">
-                <img src="https://minimalistbaker.com/wp-content/uploads/2018/03/Oil-Free-Baked-Cheesy-Fries-SQUARE.jpg" alt="" class="img">
+                <img src="https://images.pexels.com/photos/5446513/pexels-photo-5446513.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="img">
               </div>
               <div class="content">
                 <a href="#" class="btn3">See Full Menu</a>
@@ -86,7 +107,7 @@
             <img src="https://getbase.org/templates/restaurant-template/divider-gold.a0e00e80.svg" alt="" class="seperator">
             <div class="container">
               <div class="image-wrapper">
-                <img src="https://www.tasteandflavors.com/wp-content/uploads/2020/10/msakhan-square.gif" class="img">
+                <img src="https://images.pexels.com/photos/2781540/pexels-photo-2781540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img">
               </div>
               <div class="content">
                 <a href="#" class="btn3">See Full Menu</a>
@@ -107,11 +128,11 @@
             </div>
           </div>
           <div class="food column">
-            <p class="font">Beverages</p>
+            <p class="font">Desserts</p>
             <img src="https://getbase.org/templates/restaurant-template/divider-gold.a0e00e80.svg" alt="" class="seperator">
             <div class="container">
               <div class="img-wrapper">
-                <img src="https://images.pexels.com/photos/792613/pexels-photo-792613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img">
+                <img src="https://media.gettyimages.com/photos/chocolate-cake-with-cherry-on-top-picture-id654446878?s=612x612" alt="" class="img">
               </div>
               <div class="content">
                 <a href="#" class="btn3">See Full Menu</a>
@@ -147,44 +168,43 @@
     <div class="order" id="order">
     
       <div class="empty">
-        <img src="https://images.pexels.com/photos/3534744/pexels-photo-3534744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <img src="https://images.pexels.com/photos/2317542/pexels-photo-2317542.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
       </div>
       <div class="form">
         <h2><img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor1"> Reserve a Table <img src="https://demo.kaliumtheme.com/restaurant/wp-content/uploads/2017/07/divider.png" alt="" class="decor decor2"></h2>
         <p>Easy Access and don't loose time waiting!</p>
         <img src="https://getbase.org/templates/restaurant-template/divider-gold.a0e00e80.svg" alt="" class="seperator">
         <form action="">
-          <div class="column">
-            <div class="row">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name">
-            </div>
-            <div class="row">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email">
-            </div>
-            <div class="row">
-              <label for="date">Date</label>
-              <input type="date" name="date" id="date">
-            </div>
-            <div class="row">
-              <label for="time">Time</label>
-              <input type="time" name="time" id="time">
-            </div>
-            <div class="row">
-              <label for="people">We are</label>
-              <select name="people" id="people">
-                <option value="1">One Person</option>
-                <option value="2">Two People</option>
-                <option value="4">Four People</option>
-                <option value="6">Six People</option>
-                <option value="8">Eight People</option>
-                <option value="8+">More than 8</option>
-              </select>
-            </div>
+          <div class="form-wrapper">
+            
+            <label for="name" class="label1">Name</label>
+            <input type="text" name="name" id="name" class="input1">
+          
+          
+            <label for="email" class="label2">Email</label>
+            <input type="email" name="email" id="email" class="input2">
+          
+          
+            <label for="date" class="label3">Date</label>
+            <input type="date" name="date" id="date" class="input3">
+          
+          
+            <label for="time"  class="label4">Time</label>
+            <input type="time" name="time" id="time"class="input4">
+          
+          
+            <label for="people" class="label5">We are</label>
+            <select name="people" id="people" class="inpuut5">
+              <option value="1">One Person</option>
+              <option value="2">Two People</option>
+              <option value="4">Four People</option>
+              <option value="6">Six People</option>
+              <option value="8">Eight People</option>
+              <option value="8+">More than 8</option>
+            </select>
+            <button type="submit" class="button">Find a Table</button>
           </div>
 
-          <button type="submit">Find a Table</button>
         </form>
       </div>
       
@@ -212,5 +232,3 @@
   </footer>
 </body>
 </html>
-
-
