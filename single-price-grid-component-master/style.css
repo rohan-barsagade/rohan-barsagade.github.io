@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5eff5;
+}
+
+.container {
+    max-width: 620px;
+    min-height: 455px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.flex1 {
+    width: 100%;
+    background-color: white;
+    padding: 4rem;
+}
+
+.flex1_heading {
+    color: hsl(179, 62%, 43%);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.flex1_subheading {
+    color: hsl(71, 73%, 54%);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.flex1_content {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: hsl(218, 22%, 67%);
+}
+
+.flex2 {
+    width: 50%;
+    padding: 4rem;
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+}
+
+.flex2_heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.flex2_price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.flex2_span {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.flex2_content {
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+}
+
+.flex2_btn {
+    width: 100%;
+    text-align: center;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+} 
+
+.flex3 {
+    width: 50%;
+    padding: 4rem;
+    background-color: hsl(179, 62%, 43%, 0.8);
+    color: hsl(204, 43%, 93%);
+}
+
+.flex3_heading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.flex3_content {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.flex3_list {
+    margin-bottom: 0.3rem;
+    font-weight: 200;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer p {
+    font-weight: bold;
+}
+
+.footer a {
+    font-weight: normal;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.flex2_btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        height: 150vh;
+    }
+    .container {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .flex2 {
+        width: 100%;
+    }
+    .flex3 {
+        width: 100%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
